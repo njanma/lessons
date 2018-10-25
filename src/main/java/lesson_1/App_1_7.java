@@ -9,8 +9,7 @@ public class App_1_7 {
         }
 
         //for each
-        int[] ints = {1, 2, 3};
-        for (int arg : ints) {
+        for (int arg : new int[]{1, 2, 3}) {
             System.out.println(arg);
         }
 
