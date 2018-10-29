@@ -7,10 +7,10 @@ public class App_1_8 {
         continueWithLabel();
 
         //nested for break
-        nestedForBreak();
+//        nestedForBreak();
 
         //return
-        returnInFor();
+//        returnInFor();
     }
 
     private static void continueWithLabel() {
