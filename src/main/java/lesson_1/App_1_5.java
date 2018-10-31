@@ -10,7 +10,7 @@ public class App_1_5 {
             System.out.println("Condition is false.");
         } // end block 2
         else {
-            System.out.println("!!!!");
+            System.out.println(condition ? "!!!!" : "?????");
         }
     }
 }
