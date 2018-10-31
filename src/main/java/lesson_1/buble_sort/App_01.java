@@ -12,15 +12,19 @@ public class App_01 {
 
         for (int k = 0; k < arr.length - 1; k++) {
 
-            int tmp = arr[k];
-
-            arr[k] = arr[k + 1];
-
-            arr[k + 1] = tmp;
+            swap(arr, k, k + 1);
 
         }
 
         System.out.println(Arrays.toString(arr));
 
+    }
+
+    public static void swap(int[] arr, int fst, int snd) {
+        int tmp = arr[fst];
+
+        arr[fst] = arr[snd];
+
+        arr[snd] = tmp;
     }
 }

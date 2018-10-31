@@ -14,13 +14,9 @@ public class App_03 {
 
                 if (arr[index] > arr[index + 1]) {
 
-                    int tmp = arr[index];
-                    arr[index] = arr[index + 1];
-                    arr[index + 1] = tmp;
+                    App_01.swap(arr, index, index + 1);
                 }
-
             }
-
         }
 
         System.out.println(Arrays.toString(arr));

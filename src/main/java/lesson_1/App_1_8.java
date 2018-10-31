@@ -26,11 +26,14 @@ public class App_1_8 {
 
 
     private static void nestedForBreak() {
-        for (int k = 3; k > 0; --k) {
-            System.out.println("k = " + k);
-            for (int j = 0; j < 3; j++) {
-                if (j == 1) {
-                    System.out.println("j = " + j);
+        for (int k = 0; k <= 5; k++) {
+            System.out.print("k = " + k + "; ");
+
+            for (int j = 0; j <= 5; j++) {
+                System.out.print("j = " + j + "; ");
+
+                if (j > 2) {
+                    System.out.println("break");
                     break;
                 }
             }

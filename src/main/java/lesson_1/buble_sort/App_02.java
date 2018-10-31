@@ -11,10 +11,10 @@ public class App_02 {
         System.out.print(Arrays.toString(arr) + " -> ");
 
         for (int k = 0; k < arr.length - 1; k++) {
+
             if (arr[k] > arr[k + 1]) {
-                int tmp = arr[k];
-                arr[k] = arr[k + 1];
-                arr[k + 1] = tmp;
+
+                App_01.swap(arr, k, k + 1);
             }
         }
         System.out.println(Arrays.toString(arr));
