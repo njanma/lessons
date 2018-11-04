@@ -1,5 +1,5 @@
 package lesson_1;
-
+//TODO: рассказать про String
 public class App_1_12 {
 
     public static void main(String[] args) {
