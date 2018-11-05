@@ -3,13 +3,15 @@ package lesson_2;
 public class App_2_11 {
 }
 
-interface I {}
+abstract class Grandpa {
+    void doSomething(){}
+    abstract void doNothing();
+}
 
-interface J {}
+class ParentImpl extends Grandpa{
 
-//Предком может быть только класс, но не интерфейс
-//class X_11 extends I {}
+    void doNothing() {
+        doSomething();
+    }
 
-class X_11 implements I {}
-
-class Y_11 implements I, J {}
+}

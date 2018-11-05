@@ -21,7 +21,7 @@ public class App_2_10 {
         new Ax(0);
         new Ax(null);
         new Bx();
-//        new Bx(0); // ошибка компиляции
-//        new Bx(null);  // ошибка компиляции
+//      new Bx(0);    // ошибка компиляции
+//      new Bx(null); // ошибка компиляции
     }
 }
