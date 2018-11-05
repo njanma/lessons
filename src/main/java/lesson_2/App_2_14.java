@@ -1,6 +1,6 @@
 package lesson_2;
 
-public class App_2_14_1 {
+public class App_2_14 {
     public static void main(String[] args) {
         B1 x = new C1();
         x.f();
