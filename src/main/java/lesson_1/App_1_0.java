@@ -12,14 +12,14 @@ public class App_1_0 {
 
     // 1 byte = 8 bit
 
-    boolean aBoolean    = true;     // 1 bit
-    char aChar          = '\u0000'; // 16 bit Unicode characters
-    byte aByte          = 0;        // 8 bit  -128 .. 127
-    short aShort        = 0;        // 16 bit -32,768 .. 32,767
-    int anInt           = 0;        // 32 bit -2,147,483,648 .. 2,147,483,647
-    long aLong          = 0L;       // 64 bit -9,223,372,036,854,775,808 .. 9,223,372,036,854,775,807
-    float floatType     = 0.0f;     // 32 bit 3.40282347 x 10^38, 1.40239846 x 10^-45
-    double doubleType   = 0.0d;     // 64 bit 1.7976931348623157 x 10^308, 4.9406564584124654 x 10^-324
+    boolean aBoolean   = true;     // 1 bit
+    char    aChar      = '\u0000'; // 16 bit Unicode characters
+    byte    aByte      = 0;        // 8 bit  -128 .. 127
+    short   aShort     = 0;        // 16 bit -32,768 .. 32,767
+    int     anInt      = 0;        // 32 bit -2,147,483,648 .. 2,147,483,647
+    long    aLong      = 0L;       // 64 bit -9,223,372,036,854,775,808 .. 9,223,372,036,854,775,807
+    float   floatType  = 0.0f;     // 32 bit 3.40282347 x 10^38, 1.40239846 x 10^-45
+    double  doubleType = 0.0d;     // 64 bit 1.7976931348623157 x 10^308, 4.9406564584124654 x 10^-324
 
     public static void main(String[] args) {
         int b = 2;
