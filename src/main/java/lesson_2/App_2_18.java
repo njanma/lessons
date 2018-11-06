@@ -15,7 +15,7 @@ abstract class Figure2 {
     private Figure2() {
     }
 
-    public static class Circle2 extends Figure2 {
+    public static final class Circle2 extends Figure2 {
         private final double radius;
 
         public Circle2(double radius) {
@@ -27,7 +27,7 @@ abstract class Figure2 {
         }
     }
 
-    public static class Rectangle2 extends Figure2 {
+    public static final class Rectangle2 extends Figure2 {
         private final double width;
         private final double height;
 
