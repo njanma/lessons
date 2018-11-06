@@ -1,5 +1,8 @@
 package lesson_2;
 
+/**
+ * Полиморфизм подтипов.
+ */
 public class App_2_19 {
     public static void main(String[] args) {
         Figure3[] figures = {new CircleFigure3(1), new RectangleFigure3(2, 1)};

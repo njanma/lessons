@@ -55,6 +55,7 @@ class FigureUtils2 {
         return 2 * Math.PI * circle.getRadius();
     }
 
+    // Ad hoc полиморфизм.
     // С появлением нового потомка нужно переписывать код.
    /*public static double perimeter(Figure figure) {
         if (figure instanceof RectangleFigure) {

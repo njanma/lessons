@@ -4,6 +4,7 @@ import static lesson_2.FigureUtils1.perimeter;
 
 /**
  * Overloading.
+ * Ad hoc полиморфизм.
  */
 public class App_2_16 {
     public static void main(String[] args) {
