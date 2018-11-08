@@ -1,6 +1,10 @@
 package lesson_2;
 
-class ParentA {
+class ParentA extends Object{
+    public ParentA() {
+        super();
+    }
+
     void a() {
     }
 
@@ -9,7 +13,11 @@ class ParentA {
     }
 }
 
-class ChildB extends ParentA {}
+class ChildB extends ParentA {
+    public ChildB() {
+        super();
+    }
+}
 
 public class App_2_8 {
     public static void main(String[] args) {
