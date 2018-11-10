@@ -24,7 +24,8 @@
 * **Практика по потокам**
 * Работа со строками  (Регулярные выражения)
 * Интернационализация в Java
-* Шаблоны проектирования (Singleton, Factory, Command, Builder) (S.O.L.I.D)
+* S.O.L.I.D
+* Шаблоны проектирования (Singleton, Factory, Command, Builder)
 * XML, XSD
 * Парсеры (DOM, SAX, StAX)
 * XSL, XSLT/XPath

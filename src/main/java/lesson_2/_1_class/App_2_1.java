@@ -7,22 +7,9 @@ package lesson_2._1_class;
  */
 public class App_2_1 extends Object {
 
-    int x;
+    int x;  //проициализирует нулём
 
-    public App_2_1() {
-        //добавится всегда по-умолчанию, если иной super(...) не прописан явно
-        super();
-        x = this.hashCode();
-    }
-
-    public App_2_1(int k) {
-    }
-}
-
-class Children1 extends App_2_1 {
-    public Children1() {
-        super();
-        // к моменту вызова конструктора потомка предок уже сконструирован
-        System.out.println(x);
+    public int getX() {
+        return x;
     }
 }
