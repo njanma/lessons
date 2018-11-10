@@ -1,4 +1,4 @@
-package lesson_2;
+package lesson_2._2_constructor;
 
 
 class A {

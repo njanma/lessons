@@ -1,4 +1,4 @@
-package lesson_2;
+package lesson_2._1_class;
 
 /**
  * 1) у класса всегда есть один конструктор

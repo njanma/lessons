@@ -1,6 +1,6 @@
-package lesson_2;
+package lesson_2._5_polymorphism;
 
-import static lesson_2.FigureUtils1.perimeter;
+import static lesson_2._5_polymorphism.FigureUtils1.perimeter;
 
 /**
  * Overloading.

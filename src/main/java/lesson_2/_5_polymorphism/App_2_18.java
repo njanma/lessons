@@ -1,4 +1,4 @@
-package lesson_2;
+package lesson_2._5_polymorphism;
 
 public class App_2_18 {
     public static void main(String[] args) {

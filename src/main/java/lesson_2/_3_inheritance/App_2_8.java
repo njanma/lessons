@@ -1,7 +1,7 @@
-package lesson_2;
+package lesson_2._3_inheritance;
 
-class ParentA extends Object{
-    public ParentA() {
+class Parent extends Object{
+    public Parent() {
         super();
     }
 
@@ -13,15 +13,15 @@ class ParentA extends Object{
     }
 }
 
-class ChildB extends ParentA {
-    public ChildB() {
+class Child extends Parent {
+    public Child() {
         super();
     }
 }
 
 public class App_2_8 {
     public static void main(String[] args) {
-        ChildB child = new ChildB();
+        Child child = new Child();
         child.a();
         child.d();
     }

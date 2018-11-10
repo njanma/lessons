@@ -1,4 +1,4 @@
-package lesson_2;
+package lesson_2._3_inheritance;
 
 /**
  * Overriding.
@@ -6,7 +6,7 @@ package lesson_2;
  * toString, equals, hashCode, finalize, clone, getClass - относятся к ООП
  * wait, notify, notifyAll - относятся к многопоточной части
  */
-public class App_2_13 {
+public class App_2_13 extends Object{
 
     @Override
     public int hashCode() {

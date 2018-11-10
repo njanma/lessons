@@ -1,4 +1,4 @@
-package lesson_2;
+package lesson_2._4_interface;
 
 public class App_2_12 {
 }
@@ -16,9 +16,9 @@ interface J {
 //Предком может быть только класс, но не интерфейс
 //class XXX extends I {}
 
-class X_12 implements I {}
+class X implements I {}
 
-class Y_12 implements I, J {
+class Y implements I, J {
 
     public int getJ() {
         return getI();

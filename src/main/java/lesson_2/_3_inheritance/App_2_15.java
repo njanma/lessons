@@ -1,5 +1,8 @@
-package lesson_2;
+package lesson_2._3_inheritance;
 
+/**
+ * task
+ */
 public class App_2_15 {
     public static void main(String[] args) {
         A2 a2 = new C2();
