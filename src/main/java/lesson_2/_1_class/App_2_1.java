@@ -1,3 +1,4 @@
+//TODO: пакеты
 package lesson_2._1_class;
 
 /**
@@ -7,9 +8,25 @@ package lesson_2._1_class;
  */
 public class App_2_1 extends Object {
 
-    int x;  //проициализирует нулём
+    //инициализация по-умолчанию: 0, false, null
+    int x;
+    Object y;
+    static int staticZ;
+
+    {
+        y = new Object();
+    }
+
+    static {
+        staticZ = 12;
+    }
 
     public int getX() {
-        return x;
+        return x + staticZ;
+    }
+
+    //доступны только статические переменные
+    public static int getZ() {
+        return staticZ;
     }
 }

@@ -1,6 +1,9 @@
 package lesson_2._2_constructor;
 
 public class App_2_1 {
+    public static void main(String[] args) {
+        new Children1();
+    }
 }
 
 class Grandparent1 extends Object {

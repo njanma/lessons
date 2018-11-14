@@ -13,4 +13,9 @@ public class App_2_2 {
         //recursive invocation
         //this();
     }
+
+    public static void main(String[] args) {
+        new App_2_2();
+        new App_2_2(15);
+    }
 }
