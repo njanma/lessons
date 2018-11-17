@@ -13,6 +13,12 @@ interface J {
     int getJ();
 }
 
+interface J2 extends J {
+    default int multiplyJ(int multiplier) {
+        return getJ() * multiplier;
+    }
+}
+
 //Предком может быть только класс, но не интерфейс
 //class XXX extends I {}
 
