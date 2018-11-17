@@ -1,6 +1,6 @@
 package lesson_2._7_inner_nested_classes;
 
-//nested class
+//static nested class
 public class App_1 {
     public static void main(String[] args) {
         Invoice invoice = new Invoice();
