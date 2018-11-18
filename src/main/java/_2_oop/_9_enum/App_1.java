@@ -1,5 +1,7 @@
 package _2_oop._9_enum;
 
+import java.util.Arrays;
+
 public class App_1 {
 
     public static void main(String[] args) {
@@ -12,9 +14,16 @@ public class App_1 {
             case GREEN:
         }
 
+        System.out.println(Arrays.toString(Color.values()));
     }
 }
 
 enum Color {
-    RED, BLACK, GREEN
+    RED("R"), BLACK("B"), GREEN("G");
+
+    private final String letter;
+
+    Color(String letter) {
+        this.letter = letter;
+    }
 }
