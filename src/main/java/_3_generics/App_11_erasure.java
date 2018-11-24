@@ -1,6 +1,6 @@
 package _3_generics;
 
-public class App_9_erasure {
+public class App_11_erasure {
 
     public static void main(String[] args) {
         D<Integer> anInt = null;
@@ -13,9 +13,7 @@ public class App_9_erasure {
     }
 }
 
-interface C<E> {
-
-}
+interface C<E> {}
 
 interface D<E> {
     E getElem();
