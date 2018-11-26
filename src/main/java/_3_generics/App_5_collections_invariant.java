@@ -6,7 +6,7 @@ import _3_generics.Utils.Parent;
 
 import java.util.ArrayList;
 
-public class App_5 {
+public class App_5_collections_invariant {
     public static void main(String[] args) {
         ArrayList<Child> children = new ArrayList<Child>();
         ArrayList<Parent> parents = new ArrayList<Parent>();
