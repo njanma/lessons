@@ -4,7 +4,7 @@ import static _4_collections.iterator.Utils.interval;
 import static _4_collections.iterator.Utils.merge;
 import static _4_collections.iterator.Utils.squares;
 
-public class App_7 {
+public class App_7_merge {
     public static void main(String[] args) {
         for (Integer i : merge(interval(1, 10), squares(10, 1050)))
             System.out.print(i + " ");
