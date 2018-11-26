@@ -8,13 +8,16 @@ public class App_1 {
         Employee[] employees = {new Employee("Mike"), new Employee("Bill")};
         Company company = new Company(employees);
 
-        for (Employee employee : company) {
-            System.out.println(employee);
-        }
 
-        for (int i = 0; i < company.numberOfEmployees(); i++) {
+        for (int i = 0; i < company.numberOfEmployees(); i++)
             company.getEmplyee(i);
-        }
 
+
+//        for (Employee employee : company)
+//            System.out.println(employee);
+
+
+//        for (Iterator<Employee> iterator = company.iterator(); iterator.hasNext(); )
+//            System.out.println(iterator.next());
     }
 }
