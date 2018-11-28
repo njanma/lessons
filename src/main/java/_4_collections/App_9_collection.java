@@ -9,7 +9,7 @@ import java.util.ListIterator;
 
 /**
  * BigO notation
- * java.util.Collection
+ * устройство java.util.Collection
  */
 public class App_9_collection {
     public static void main(String[] args) {

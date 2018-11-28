@@ -7,7 +7,10 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.RandomAccess;
 
-public class App_10_random_access {
+/**
+ * TODO: устройство java.util.List
+ */
+public class App_10_list {
     public static void main(String[] args) {
         List<Integer> ints = Arrays.asList(6, 3, 4, 5, 1);
         ArrayList<Integer> arrayList = new ArrayList<>(ints);
@@ -18,6 +21,13 @@ public class App_10_random_access {
 
         System.out.println(arrayList);
         System.out.println(linkedList);
+
+        arrayList.add(1);
+        arrayList.get(1);
+        arrayList.set(0, 33);
+        arrayList.remove(2);
+        arrayList.contains(3);
+        arrayList.size();
     }
 
     private static <E extends Comparable<E>, T extends List<E> & RandomAccess> void sortRandomAccessCollections(T collection) {

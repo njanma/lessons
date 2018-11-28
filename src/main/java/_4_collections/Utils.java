@@ -1,7 +1,9 @@
 package _4_collections;
 
 import java.util.Iterator;
+import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.function.Consumer;
 
 public class Utils {
     private Utils() {
@@ -64,5 +66,19 @@ public class Utils {
                 return employees[i];
             }
         }
+    }
+    public static <E> void timerOnAction(List<E> list, Consumer<List<E>> action) {
+        timerOnAction(list, action, list.size());
+    }
+
+
+    public static <E> void timerOnAction(List<E> list, Consumer<List<E>> action, int count) {
+        long start = System.currentTimeMillis();
+        for (int i = 0; i < count; i++) {
+            action.accept(list);
+        }
+        long finish = System.currentTimeMillis();
+
+        System.out.println("Spent time: " + (finish - start));
     }
 }
