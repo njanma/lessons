@@ -81,4 +81,11 @@ public class Utils {
 
         System.out.println("Spent time: " + (finish - start));
     }
+
+
+    public static <E> void fillList(List<E> list, E elem, int size) {
+        for (int i = 0; i < size; i++) {
+            list.add(elem);
+        }
+    }
 }

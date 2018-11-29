@@ -28,6 +28,9 @@ public class App_10_list {
         arrayList.remove(2);
         arrayList.contains(3);
         arrayList.size();
+
+//        java.lang.UnsupportedOperationException
+//        Arrays.asList(1,2,3,4,5).add(6);
     }
 
     private static <E extends Comparable<E>, T extends List<E> & RandomAccess> void sortRandomAccessCollections(T collection) {

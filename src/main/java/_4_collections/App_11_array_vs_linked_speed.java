@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import static _4_collections.Utils.fillList;
+
 public class App_11_array_vs_linked_speed {
 
     public static void main(String[] args) {
@@ -34,9 +36,5 @@ public class App_11_array_vs_linked_speed {
 //        timerOnAction(linked, s -> s.add(s.size() / 2, ""), 10_000);
     }
 
-    static <E> void fillList(List<E> list, E elem, int size) {
-        for (int i = 0; i < size; i++) {
-            list.add(elem);
-        }
-    }
+
 }
