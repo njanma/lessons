@@ -2,6 +2,7 @@ package _4_collections;
 
 
 import java.util.ArrayDeque;
+import java.util.Arrays;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
@@ -21,9 +22,10 @@ public class App_23_queue {
         Deque<Integer> dequeue = new LinkedList<>();
         Deque<Integer> dequeue2 = new ArrayDeque<>(10);
 
-        Queue<Integer> priorityQueue = new PriorityQueue<>(11);
+        Queue<Integer> priorityQueue = new PriorityQueue<>(Arrays.asList(22, 50, 1, 16, 20));
 
-        actionOnQueue(queue, (counter, q) -> System.out.println(q.remove()), 15);
+
+        actionOnQueue(priorityQueue, (counter, q) -> System.out.println(q.remove()), 15);
     }
 
     static <E> void actionOnQueue(Queue<E> queue, BiConsumer<Integer, Queue<E>> action, int count) {
