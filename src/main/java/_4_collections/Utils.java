@@ -3,11 +3,36 @@ package _4_collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Objects;
 import java.util.function.Consumer;
 
 public class Utils {
     private Utils() {
     }
+
+    public static <E> void timerOnAction(List<E> list, Consumer<List<E>> action) {
+        timerOnAction(list, action, list.size());
+    }
+
+
+    public static <E> void timerOnAction(List<E> list, Consumer<List<E>> action, int count) {
+        long start = System.currentTimeMillis();
+        for (int i = 0; i < count; i++) {
+            action.accept(list);
+        }
+        long finish = System.currentTimeMillis();
+
+        System.out.println("Spent time: " + (finish - start));
+    }
+
+
+    public static <E> void fillList(List<E> list, E elem, int size) {
+        for (int i = 0; i < size; i++) {
+            list.add(elem);
+        }
+    }
+
+    //-------------------------------------------------------------------------------------
 
     public static class Employee {
         private final String name;
@@ -67,25 +92,34 @@ public class Utils {
             }
         }
     }
-    public static <E> void timerOnAction(List<E> list, Consumer<List<E>> action) {
-        timerOnAction(list, action, list.size());
-    }
 
+    public static class Node {
+        String name;
+        int id;
 
-    public static <E> void timerOnAction(List<E> list, Consumer<List<E>> action, int count) {
-        long start = System.currentTimeMillis();
-        for (int i = 0; i < count; i++) {
-            action.accept(list);
+        public Node(String name, int id) {
+            this.name = name;
+            this.id = id;
         }
-        long finish = System.currentTimeMillis();
 
-        System.out.println("Spent time: " + (finish - start));
-    }
+        @Override
+        public boolean equals(Object o) {
+            System.err.println("equals on " + id);
+            return false;
+        }
 
+        @Override
+        public int hashCode() {
+            return Objects.hash(name);
+        }
 
-    public static <E> void fillList(List<E> list, E elem, int size) {
-        for (int i = 0; i < size; i++) {
-            list.add(elem);
+        @Override
+        public String toString() {
+            return "Node{" +
+                    "name='" + name + '\'' +
+                    '}';
         }
     }
+
+    //-------------------------------------------------------------------------------------
 }

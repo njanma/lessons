@@ -6,11 +6,12 @@
 
 ![Collection](image/java-collection-hierarchy.png)
 
-
 ![Map](image/java-map-hierarchy.png)
 
 
 ###Литература:
+
+[Big-O complexities](https://habr.com/post/188010)
 
 [Java. Справочник - Флэнаган Д.](http://gen.lib.rus.ec/book/index.php?md5=9A8F95A5F9DA2E98D34F3BE66BDB946E): 168 - 170, 693 - 752  
 
