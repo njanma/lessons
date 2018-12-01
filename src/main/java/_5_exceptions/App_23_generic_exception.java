@@ -1,24 +1,26 @@
-package _3_generics;
+package _5_exceptions;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class App_9_exception {
+public class App_23_generic_exception {
 
-    //class SomethingWrong<E> extends Exception{}
+//    class SomethingWrong<E> extends Exception{}
 
-    public static <T extends Throwable> void doWork(Runnable r, Class<T> cl) {
+    static <T extends Throwable> void throwAn(Class<T> clazz) {
         try {
-            r.run();
+            throw new IllegalArgumentException();
 //        } catch (T ex) {  // ОШИБКА:  перехватить переменную типа нельзя!
-        } catch  (Throwable ex)  {
-            App_9_exception.<RuntimeException>throwAs(ex);
+        } catch (Throwable ex) {
             Logger.getGlobal().log(Level.WARNING, "An exception was thrown: " + ex);
+
+            throwAs(ex, RuntimeException.class);
+//            throwAs(ex, Exception.class);
         }
     }
 
     @SuppressWarnings("unchecked")
-    private static <T extends Throwable> void throwAs(Throwable e) throws T {
+    private static <T extends Throwable> void throwAs(Throwable e, Class<T> cl) throws T {
         throw (T) e;  // Приведение обобщенного типа, стирается в тип  (Throwable)  е
     }
 }
