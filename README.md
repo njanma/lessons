@@ -16,7 +16,7 @@
 * Аннотации
 * ~~Коллекции~~
 * **Практика по коллекциям**
-* Исключения в Java + Custom Exception
+* ~~Исключения в Java + Custom Exception~~
 * Потоки ввода – вывода 
 * Работа со строками (Регулярные выражения)
 * Интернационализация в Java
@@ -27,7 +27,7 @@
 * Потоки выполнения часть 2
 * **Практика по потокам**
 * S.O.L.I.D
-* Шаблоны проектирования (Singleton, Factory, Command, Builder)
+* Шаблоны проектирования (Singleton, Factory, Command, Builder, etc.)
 * XML, XSD. Парсеры (DOM, SAX, StAX). XSL, XSLT/XPath.
 * JSON
 
