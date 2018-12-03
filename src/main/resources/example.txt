@@ -1,0 +1,5 @@
+The Readers' FAQ and our about page contain the most commonly sought information about Wikipedia.
+
+For simple searches, there is a search box at the top of every page. Type what you are looking for in the box. Partial matches will appear in a dropdown list. Select any page in the list to go to that page. Or, select the magnifying glass "Go" button, or press ↵ Enter, to go to a full search result. For advanced searches, see Help:Searching.
+
+There are other ways to browse and explore Wikipedia articles; many can be found at Portal:Contents. Also see our disclaimer for cautions about Wikipedia's limitations.

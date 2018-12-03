@@ -80,5 +80,5 @@ gradle-app.setting
 .idea/codeStyles/
 .idea/misc.xml
 .idea/vcs.xml
-src/main/resources/
+#src/main/resources/
 src/test/
