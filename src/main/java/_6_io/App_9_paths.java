@@ -3,7 +3,7 @@ package _6_io;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class App_8_paths {
+public class App_9_paths {
     public static void main(String[] args) {
         Path absolute = Paths.get("/", "home", "cay");
         Path relative = Paths.get("myapp", "conf", "user.properties");

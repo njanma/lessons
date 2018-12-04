@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.stream.Stream;
 
-public class App_9_dirs {
+public class App_10_dirs {
     public static void main(String[] args) throws IOException {
         Path path = Paths.get("/mydir");
 
