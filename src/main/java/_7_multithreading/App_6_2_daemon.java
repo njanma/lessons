@@ -3,7 +3,7 @@ package _7_multithreading;
 /**
  * Если поток демон то порождающие им потоки тоже демоны.
  */
-public class App_8_daemon {
+public class App_6_2_daemon {
     public static void main(String[] args) {
         Runnable sleep1sec = () -> {
             try {

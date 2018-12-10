@@ -9,7 +9,7 @@ import java.util.concurrent.Future;
 /**
  * volatile
  */
-public class App_6_callable {
+public class App_6_1_callable {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         Callable<String> callable = new Callable<String>() {

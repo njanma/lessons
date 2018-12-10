@@ -1,6 +1,6 @@
 package _7_multithreading;
 
-public class App_7_priority {
+public class App_7_priority_I {
     public static void main(String[] args) {
         Thread threadFst = new Thread(new MyRun(1));
         Thread threadSnd = new Thread(new MyRun(2));
