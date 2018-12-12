@@ -1,6 +1,6 @@
 package _7_multithreading;
 
-public class App_10_hb {
+public class App_10_hb_volatile {
 
     static int data = 0;
     static /*volatile*/ boolean run = false;
