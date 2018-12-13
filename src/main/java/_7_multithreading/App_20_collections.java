@@ -34,6 +34,8 @@ public class App_20_collections {
         ConcurrentMap<String, Integer> concurrentHashMap = new ConcurrentHashMap<>();
         ConcurrentNavigableMap<String, Object> concurrentSkipListMap = new ConcurrentSkipListMap<>();
 
+        //concurrent sets
+        Set<String> concurrentSet = ConcurrentHashMap.newKeySet(1);
         NavigableSet<String> skipListSet = new ConcurrentSkipListSet<>();
     }
 }
