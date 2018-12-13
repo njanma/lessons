@@ -19,6 +19,10 @@
 
 [JMM](https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html)
 
+[juc](https://habr.com/company/luxoft/blog/157273/)
+
+[synchronizers](https://habr.com/post/277669/)
+
 [Java SE 8. Базовый курс, Кей С. Хорстманн](http://gen.lib.rus.ec/book/index.php?md5=BE98713052E8B179E988A43DED02ABDF): 279 - 314
 
 [Философия Java. Эккель Б.](http://gen.lib.rus.ec/book/index.php?md5=3C49E900CFC0228BCF75C2567747E793): 483 - 555
