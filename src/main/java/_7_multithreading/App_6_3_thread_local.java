@@ -3,7 +3,7 @@ package _7_multithreading;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class App_66_thread_local {
+public class App_6_3_thread_local {
     public static void main(String[] args) throws InterruptedException {
         ThreadId threadId = new ThreadId();
 
