@@ -25,8 +25,7 @@
 ####Модуль 2 (40 уч.ч). JD02 «Программирование на Java. Углубленный уровень»
 * ~~Потоки выполнения~~
 * **Практика по потокам**
-* S.O.L.I.D
-* Шаблоны проектирования (Singleton, Factory, Command, Builder, etc.)
+* S.O.L.I.D & Design patterns(Singleton, Factory, Command, Builder, etc.)
 * XML, XSD. Парсеры (DOM, SAX, StAX). XSL, XSLT/XPath.
 * JSON
 
