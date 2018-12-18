@@ -1,10 +1,9 @@
 ####Summary:
 
+[SOLID](https://en.wikipedia.org/wiki/SOLID)
 
-###Литература:
+[UML](https://habr.com/post/150041/)
 
-[uml](https://habr.com/post/150041/)
+[patterns](https://refactoring.guru/ru/design-patterns)
 
-[Java SE 8. Базовый курс, Кей С. Хорстманн](http://gen.lib.rus.ec/book/index.php?md5=BE98713052E8B179E988A43DED02ABDF): 315 - 353
-
-[Философия Java. Эккель Б.](http://gen.lib.rus.ec/book/index.php?md5=3C49E900CFC0228BCF75C2567747E793): 358 -398
+[implementations in java](https://github.com/iluwatar/java-design-patterns)
