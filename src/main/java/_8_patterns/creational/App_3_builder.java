@@ -11,6 +11,9 @@ public class App_3_builder {
         new java.lang.StringBuilder().append(0);
         new java.lang.StringBuffer().append(0);
         java.util.stream.Stream.builder();
+
+        Person.PersonBuilder builder = Person.builder();
+        Person person = builder.build();
     }
 
     @Builder

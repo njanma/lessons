@@ -4,6 +4,8 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.io.Reader;
+import java.io.Writer;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Enumeration;
@@ -16,7 +18,7 @@ public class App_1_adapter {
         java.util.Arrays.asList(1, 2, 3);
         Enumeration<Integer> enumeration = Collections.enumeration(Arrays.asList(1, 2, 3));
 
-        InputStreamReader inputStreamReader = new InputStreamReader(new ByteArrayInputStream("bytes".getBytes()));
-        OutputStreamWriter outputStreamWriter = new OutputStreamWriter(new ByteArrayOutputStream());
+        Reader inputStreamReader = new InputStreamReader(new ByteArrayInputStream("bytes".getBytes()));
+        Writer outputStreamWriter = new OutputStreamWriter(new ByteArrayOutputStream());
     }
 }
