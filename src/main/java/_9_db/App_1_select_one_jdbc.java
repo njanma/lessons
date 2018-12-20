@@ -19,7 +19,7 @@ public class App_1_select_one_jdbc {
     private static void selectByStatement(Connection dbConnection) throws SQLException {
         Statement statement = null;
 
-        String selectTableSQL = "SELECT title, in_progress FROM student_group";
+        String selectTableSQL = "SELECT title, in_progress FROM student_group where id = 1";
 
         try {
             statement = dbConnection.createStatement();

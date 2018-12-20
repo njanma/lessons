@@ -1,17 +1,14 @@
 package _9_db;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class App_2_select_all {
 
-    public static void main(String[] args) throws ClassNotFoundException, SQLException {
-        Class.forName("org.postgresql.Driver");
-        Connection connection = DriverManager.getConnection(
-                "jdbc:postgresql://localhost:5432/example", "postgres", "");
+    public static void main(String[] args) throws SQLException {
+        Connection connection = Utils.getConnection();
         selectByPreparedStatement(connection);
         connection.close();
     }
