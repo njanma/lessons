@@ -1,6 +1,6 @@
 package _1_procedural;
 
-public class App_1_6 {
+public class App_1_6_switch {
     public static void main(String[] args) {
         int month = 8;
         String monthString;

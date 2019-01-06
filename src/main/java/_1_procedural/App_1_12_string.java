@@ -1,6 +1,6 @@
 package _1_procedural;
 //TODO: рассказать про String
-public class App_1_12 {
+public class App_1_12_string {
 
     public static void main(String[] args) {
         System.out.println(invert("Hello"));

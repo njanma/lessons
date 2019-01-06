@@ -1,6 +1,6 @@
 package _1_procedural;
 
-public class App_1_7 {
+public class App_1_7_for {
     public static void main(String[] args) {
 
         //for (initialization; termination; increment)
@@ -13,16 +13,7 @@ public class App_1_7 {
             System.out.println(arg);
         }
 
-        //break
-        int o = 10;
-        for (; o > 0; --o) {
-            System.out.println("i = " + o);
-            if (o == 5) {
-                break;
-            }
-        }
-
-//        //infinite loop
+        //infinite loop
 //        for (; ; )
 //            System.out.println("infinite!");
     }

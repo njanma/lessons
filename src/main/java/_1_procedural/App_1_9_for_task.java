@@ -1,6 +1,6 @@
 package _1_procedural;
 
-public class App_1_9 {
+public class App_1_9_for_task {
     public static void main(String[] args) {
 
         // task

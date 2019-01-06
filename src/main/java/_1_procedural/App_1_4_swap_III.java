@@ -1,6 +1,6 @@
 package _1_procedural;
 
-public class App_1_4 {
+public class App_1_4_swap_III {
     public static void main(String[] args) {
         int a = 2; // 10
         int b = 3; // 11

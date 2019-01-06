@@ -1,29 +1,26 @@
 package _1_procedural;
 
-public class App_1_8 {
+public class App_1_7_for_break {
     public static void main(String[] args) {
 
-        //continue
-        continueWithLabel();
+        //break;
+//        forBreak();
 
         //nested for break
 //        nestedForBreak();
 
-        //return
-//        returnInFor();
+
     }
 
-    private static void continueWithLabel() {
-        test:
-        for (int i = 0; i <= 10; i++) {
-            if (i < 5) {
-                System.out.println("continue: " + i);
-                continue test;
+    private static void forBreak() {
+        int o = 10;
+        for (; o > 0; --o) {
+            System.out.println("i = " + o);
+            if (o == 5) {
+                break;
             }
-            break test;
         }
     }
-
 
     private static void nestedForBreak() {
         for (int k = 0; k <= 5; k++) {
@@ -37,13 +34,6 @@ public class App_1_8 {
                     break;
                 }
             }
-        }
-    }
-
-    private static void returnInFor() {
-        for (int i = 0; i < 10; i++) {
-            System.out.println(i);
-            return;
         }
     }
 }

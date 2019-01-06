@@ -1,6 +1,6 @@
 package _1_procedural;
 
-public class App_1_0 {
+public class App_1_0_primitive_types {
 
     //complement
     // 0111 1111 == 127

@@ -2,7 +2,7 @@ package _1_procedural;
 
 import java.util.Arrays;
 
-public class App_1_1 {
+public class App_1_1_arrays {
     public static void main(String[] args) {
         System.out.println(new Object());
         System.out.println("x = " + new Object());

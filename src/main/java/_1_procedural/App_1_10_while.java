@@ -1,6 +1,6 @@
 package _1_procedural;
 
-public class App_1_10 {
+public class App_1_10_while {
     public static void main(String[] args) {
 
         //while (expression)

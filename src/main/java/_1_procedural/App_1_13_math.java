@@ -1,6 +1,6 @@
 package _1_procedural;
 
-public class App_1_13 {
+public class App_1_13_math {
     public static void main(String[] args) {
         //abs
         int abs1 = Math.abs(10);  // abs1 = 10
