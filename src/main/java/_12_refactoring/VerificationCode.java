@@ -1,9 +1,10 @@
 package _12_refactoring;
 
-public class VerificationCode {
+import lombok.Data;
 
-    private String verificationCode;
-    private Long attempts;
+@Data
+public class VerificationCode {
+    private String code;
     private boolean confirmed;
     private Team team;
     private Long initiatorId;

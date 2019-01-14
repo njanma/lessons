@@ -1,10 +1,13 @@
 package _12_refactoring;
 
-import io.vavr.API;
+import lombok.experimental.UtilityClass;
 
+import static io.vavr.API.TODO;
+
+@UtilityClass
 public class ServiceFactory {
 
-    static DataStoreService getTransactionalDatastoreService(){
-        return API.TODO();
+    public static DataStoreService getTransactionalDatastoreService() {
+        return TODO();
     }
 }
