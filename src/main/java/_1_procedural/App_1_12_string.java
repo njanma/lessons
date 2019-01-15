@@ -1,4 +1,5 @@
 package _1_procedural;
+
 //TODO: рассказать про String
 public class App_1_12_string {
 
