@@ -8,7 +8,9 @@ public class App_1_1_arrays {
         System.out.println("x = " + new Object());
 
         char[] arrChars = {'a', 'b', 'c', 'd', 'e'};
-        System.out.println(arrChars);
+        int[] ints = new int[]{1, 2, 3, 4, 5};
+        System.out.println(ints);
+//        System.out.println(arrChars);
 //        System.out.println(Arrays.toString(arrChars));
 
         arrChars[1] = 'f';
@@ -18,10 +20,10 @@ public class App_1_1_arrays {
 //        int[] arrIncorrect;
 //        arrIncorrect = {1, 2, 3};
         //incorrect
-        System.out.println(emptyArray == filledArray);
-        System.out.println(emptyArray.equals(filledArray));
+//        System.out.println(emptyArray == filledArray);
+//        System.out.println(emptyArray.equals(filledArray));
         //correct
-        System.out.println(Arrays.equals(emptyArray, filledArray));
+//        System.out.println(Arrays.equals(emptyArray, filledArray));
 
         int[] array1D = {1, 2, 3};
         int[][] array2D = {

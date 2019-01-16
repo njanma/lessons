@@ -2,7 +2,7 @@ package _1_procedural;
 
 public class App_1_0_primitive_types {
 
-    //complement
+    //complement (https://en.wikipedia.org/wiki/Two%27s_complement)
     // 0111 1111 == 127
     // 0000 0001 == 1
     // 0000 0000 == 0
@@ -36,11 +36,12 @@ public class App_1_0_primitive_types {
 //        System.out.println(1 / 0);
 //        double inf = 1.0 / 0;
 //        double infMinus = -1.0 / 0;
+//        System.out.println(infMinus);
 //        double nan = 0.0 / 0;
 //        System.out.println(nan == nan);
 //        System.out.println(nan);
-        System.out.println((c = c + b) == (c += b));
-        System.out.println((++c) == (d = d + 1));
+//        System.out.println((c = c + b) == (c += b));
+//        System.out.println((++c) == (d = d + 1));
 
         //TODO: psvm on increment and decrement
         // +=, -=, *=, /=, %=, ++, --
