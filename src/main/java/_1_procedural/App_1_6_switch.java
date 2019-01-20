@@ -1,9 +1,15 @@
 package _1_procedural;
 
+import java.util.Scanner;
+
 public class App_1_6_switch {
     public static void main(String[] args) {
-        int month = 8;
+
         String monthString;
+
+        Scanner scanner = new Scanner(System.in);
+        int month = scanner.nextInt();
+
         //byte, short, char, int, enum, String, wrappers: Character, Byte, Short, Integer
         switch (month) {
             case 1:
@@ -15,13 +21,14 @@ public class App_1_6_switch {
             case 3:
                 monthString = "March";
                 break;
-            case 4:
-                monthString = "April";
-                break;
             default:
                 monthString = "Invalid month";
                 //why?
+//                break;
+            case 7:
+                monthString = "April";
                 break;
         }
+        System.out.println(monthString);
     }
 }

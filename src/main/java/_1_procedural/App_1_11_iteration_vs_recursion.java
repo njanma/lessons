@@ -6,7 +6,7 @@ public class App_1_11_iteration_vs_recursion {
 
     public static void main(String[] args) {
         int[] ints = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        invert(ints);
+        invertRecursively(ints, 0);
         System.out.println(Arrays.toString(ints));
     }
 
@@ -21,11 +21,13 @@ public class App_1_11_iteration_vs_recursion {
 
     //recursion
     public static void invertRecursively(int[] ints, int k) {
+        System.out.println(k);
         if (k < ints.length / 2) {
             int tmp = ints[k];
             ints[k] = ints[ints.length - k - 1];
             ints[ints.length - k - 1] = tmp;
             invertRecursively(ints, ++k);
+            System.out.println(k * 10);
         }
     }
 
