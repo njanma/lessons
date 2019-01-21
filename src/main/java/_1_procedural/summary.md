@@ -1,5 +1,11 @@
 ### Summary:
 
+[recursion](https://www.google.com/search?q=recursion)\
+[tail-call recursion](https://www.quora.com/What-is-the-difference-between-normal-recursion-and-tail-recursion-with-examples)
+![recursion](img/recursion.jpeg)\
+
+![String](img/string.png)
+
 Arrays:
 * java.util.Arrays.sort`
 * java.util.Arrays.binarySearch
