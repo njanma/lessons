@@ -1,4 +1,4 @@
-####Summary:
+#### Summary:
 
 ![cache_hierarchy](img/cache_hierarchy.png)
 
@@ -8,7 +8,7 @@
 
 ![false sharing](img/false_sharing.png)
 
-###Литература:
+### Литература:
 [NUMA](https://en.wikipedia.org/wiki/Non-uniform_memory_access)
 
 [SMP](https://en.wikipedia.org/wiki/Symmetric_multiprocessing)

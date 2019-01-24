@@ -1,4 +1,4 @@
-####Summary:
+#### Summary:
 
 ![BigO](image/bigO.png)
 
@@ -9,7 +9,7 @@
 ![Map](image/java-map-hierarchy.png)
 
 
-###Литература:
+### Литература:
 
 [Big-O complexities](https://habr.com/post/188010)
 

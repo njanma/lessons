@@ -1,8 +1,8 @@
-####Summary:
+#### Summary:
 
 ![exception hierarchy](image/exception_hierarchy.png)
 
-###Литература:
+### Литература:
 
 [Исключения в Java, Часть I](https://habr.com/company/golovachcourses/blog/223821)
 
