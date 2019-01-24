@@ -16,7 +16,7 @@ public class Iter_1 {
     public static int sumOfNumbers(int number) {
         int sum = 0;
         for (int i = 10; i <= number * 10; i *= 10) {
-            sum += (int) 10 * (number % i) / i;
+            sum += 10 * (number % i) / i;
             number -= number % i;
         }
         return sum;

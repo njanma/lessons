@@ -34,9 +34,8 @@ public class Iter_2 {
     }
 
     public static int recursFib(int n) {
-        if (n < 3) {
-            return 1;
-        }
-        return recursFib(n - 1) + recursFib(n - 2);
+        return n < 3
+                ? 1
+                : recursFib(n - 1) + recursFib(n - 2);
     }
 }
