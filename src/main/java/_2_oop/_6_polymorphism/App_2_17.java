@@ -1,4 +1,4 @@
-package _2_oop._5_polymorphism;
+package _2_oop._6_polymorphism;
 
 public class App_2_17 {
     public static void main(String[] args) {
@@ -54,16 +54,4 @@ class FigureUtils2 {
     public static double perimeter(CircleFigure circle) {
         return 2 * Math.PI * circle.getRadius();
     }
-
-    // Ad hoc полиморфизм.
-    // С появлением нового потомка нужно переписывать код.
-   /*public static double perimeter(Figure figure) {
-        if (figure instanceof RectangleFigure) {
-            return perimeter((RectangleFigure) figure);
-        } else if (figure instanceof CircleFigure) {
-            return perimeter((CircleFigure) figure);
-        } else {
-            throw new Error("Bad type!");
-        }
-    }*/
 }

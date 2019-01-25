@@ -1,5 +1,9 @@
-package _2_oop._5_polymorphism;
+package _2_oop._6_polymorphism;
 
+/**
+ * Ad hoc
+ * https://en.wikipedia.org/wiki/Type_conversion
+ */
 public class App_2_18 {
     public static void main(String[] args) {
         Figure2[] figure2s = {new Figure2.Circle2(1), new Figure2.Rectangle2(1, 2)};

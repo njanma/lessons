@@ -1,8 +1,8 @@
-#### Принципы ООП:
-- полиморфизм 
-- инкапсуляция 
-- наследование
+#### [Принципы ООП](https://en.wikipedia.org/wiki/Object-oriented_programming):
 - _абстракция_
+- [инкапсуляция](https://en.wikipedia.org/wiki/Encapsulation_%28computer_programming%29) 
+- [наследование](https://en.wikipedia.org/wiki/Inheritance_%28object-oriented_programming%29)
+- [полиморфизм](https://en.wikipedia.org/wiki/Polymorphism_%28computer_science%29)
 
 ### Литература:
 [Java. Справочник - Флэнаган Д.](http://gen.lib.rus.ec/book/index.php?md5=9A8F95A5F9DA2E98D34F3BE66BDB946E): 104 - 154

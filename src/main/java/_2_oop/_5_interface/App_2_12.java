@@ -1,4 +1,4 @@
-package _2_oop._4_interface;
+package _2_oop._5_interface;
 
 public class App_2_12 {
 }

@@ -1,4 +1,4 @@
-package _2_oop._6_encapsulation;
+package _2_oop._3_encapsulation;
 
 public class App_21 {
     public static void main(String[] args) {

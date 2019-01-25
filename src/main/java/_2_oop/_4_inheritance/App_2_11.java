@@ -1,4 +1,4 @@
-package _2_oop._3_inheritance;
+package _2_oop._4_inheritance;
 
 public class App_2_11 {
 }

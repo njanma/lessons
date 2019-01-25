@@ -1,4 +1,4 @@
-package _2_oop._6_encapsulation;
+package _2_oop._3_encapsulation;
 
 /**
  * private: члены класса доступны только внутри класса;

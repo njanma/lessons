@@ -1,6 +1,7 @@
 package _12_refactoring;
 
-import scala.Tuple2;
+
+import io.vavr.Tuple2;
 
 import java.util.List;
 import java.util.Set;

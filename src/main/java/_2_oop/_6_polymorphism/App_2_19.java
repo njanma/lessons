@@ -1,7 +1,8 @@
-package _2_oop._5_polymorphism;
+package _2_oop._6_polymorphism;
 
 /**
  * Полиморфизм подтипов.
+ * https://en.wikipedia.org/wiki/Subtyping
  */
 public class App_2_19 {
     public static void main(String[] args) {

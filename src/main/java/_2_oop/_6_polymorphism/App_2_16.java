@@ -1,10 +1,11 @@
-package _2_oop._5_polymorphism;
+package _2_oop._6_polymorphism;
 
-import static _2_oop._5_polymorphism.FigureUtils1.perimeter;
+import static _2_oop._6_polymorphism.FigureUtils1.perimeter;
 
 /**
  * Overloading.
  * Ad hoc полиморфизм.
+ * https://en.wikipedia.org/wiki/Function_overloading
  */
 public class App_2_16 {
     public static void main(String[] args) {
