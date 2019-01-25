@@ -1,4 +1,4 @@
-package _7_multithreading;
+package _7_concurrent;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

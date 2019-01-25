@@ -1,4 +1,4 @@
-package _7_multithreading;
+package _7_concurrent;
 
 public class App_14_lost_update {
     private static volatile int counter = 0;

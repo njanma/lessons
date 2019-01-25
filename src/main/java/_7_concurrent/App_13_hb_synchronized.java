@@ -1,4 +1,4 @@
-package _7_multithreading;
+package _7_concurrent;
 
 public class App_13_hb_synchronized {
     private static boolean run = true;

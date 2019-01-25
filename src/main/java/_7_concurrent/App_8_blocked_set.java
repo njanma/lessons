@@ -1,4 +1,4 @@
-package _7_multithreading;
+package _7_concurrent;
 
 import lombok.SneakyThrows;
 

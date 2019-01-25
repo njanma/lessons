@@ -1,4 +1,4 @@
-package _7_multithreading;
+package _7_concurrent;
 
 import _6_io.Utils;
 
