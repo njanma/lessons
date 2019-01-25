@@ -1,6 +1,7 @@
 package _2_oop._6_polymorphism;
 
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * https://en.wikipedia.org/wiki/Parametric_polymorphism
@@ -8,16 +9,20 @@ import java.util.Arrays;
 public class App_2_20 {
 
     public static void main(String[] args) {
-        Figure4[] figures = {new CircleFigure4(1), new RectangleFigure4(2, 1)};
-        System.out.println(Arrays.toString(FigureUtilsParam.perimeters(figures)));
+        Figure4<Float> circleFigure4 = new CircleFigure4(1);
+        Figure4<Double> rectangleFigure4 = new RectangleFigure4(2, 1);
+        List<Figure4<Float>> floatFig = Arrays.asList(circleFigure4);
+        List<Figure4<Double>> doubleFig = Arrays.asList(rectangleFigure4);
+//        FigureUtilsParam.perimeters(floatFig);
+//        FigureUtilsParam.perimeters(doubleFig);
     }
 }
 
-interface Figure4 {
-    double perimeter();
+interface Figure4<T extends Number> {
+    T perimeter();
 }
 
-class CircleFigure4 implements Figure4 {
+class CircleFigure4 implements Figure4<Float> {
     private final double radius;
 
     public CircleFigure4(double radius) {
@@ -29,12 +34,12 @@ class CircleFigure4 implements Figure4 {
     }
 
     @Override
-    public double perimeter() {
-        return 2 * Math.PI * getRadius();
+    public Float perimeter() {
+        return Float.valueOf(String.valueOf(2 * Math.PI * getRadius()));
     }
 }
 
-class RectangleFigure4 implements Figure4 {
+class RectangleFigure4 implements Figure4<Double> {
     private final double width;
     private final double height;
 
@@ -52,16 +57,16 @@ class RectangleFigure4 implements Figure4 {
     }
 
     @Override
-    public double perimeter() {
+    public Double perimeter() {
         return 2 * (getHeight() + getWidth());
     }
 }
 
 class FigureUtilsParam {
-    public static <T extends Figure4> double[] perimeters(T[] figures) {
-        final double[] perimeters = new double[figures.length];
-        for (int i = 0; i < figures.length; i++) {
-            perimeters[i] = figures[i].perimeter();
+    public static <T extends Figure4<Double>> double[] perimeters(List<T> figures) {
+        final double[] perimeters = new double[figures.size()];
+        for (int i = 0; i < figures.size(); i++) {
+            perimeters[i] = figures.get(i).perimeter();
         }
         return perimeters;
     }
