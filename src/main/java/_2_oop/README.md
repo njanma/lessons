@@ -1,4 +1,4 @@
-#### [Принципы ООП](https://en.wikipedia.org/wiki/Object-oriented_programming):
+### [Принципы ООП](https://en.wikipedia.org/wiki/Object-oriented_programming):
 - _абстракция_
 - [инкапсуляция](https://en.wikipedia.org/wiki/Encapsulation_%28computer_programming%29) 
 - [наследование](https://en.wikipedia.org/wiki/Inheritance_%28object-oriented_programming%29)

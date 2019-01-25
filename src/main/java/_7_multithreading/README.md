@@ -1,4 +1,4 @@
-#### Summary:
+### Summary:
 
 ![cache_hierarchy](img/cache_hierarchy.png)
 

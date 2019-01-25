@@ -1,4 +1,4 @@
-#### Примеры generics:
+### Примеры generics:
 
 - java.util.Collections
 - java.util.stream.Stream
