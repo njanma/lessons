@@ -3,35 +3,50 @@ package _2_oop._2_constructor;
 public class App_2_8_init_block {
     public static void main(String[] args) {
         new Children();
+
+        Children children = new Children() {
+            {
+                name = "Vasia";
+            }
+        };
+        System.out.println(children.age);
     }
 }
 
-class ParentInit{
+class ParentInit {
+    String name = "";
 
-    public ParentInit() {
-        System.err.println("parent constructor");
+    static {
+        System.err.println("parent static block");
     }
 
     {
         System.err.println("parent block");
     }
 
-    static {
-        System.err.println("parent static block");
+    public ParentInit() {
+        System.err.println("parent constructor");
     }
 }
 
-class Children extends ParentInit{
+class Children extends ParentInit {
 
-    public Children() {
-        System.err.println("children constructor");
+    int age;
+
+    static {
+        System.err.println("children static block");
     }
 
     {
         System.err.println("children block");
+        age = 9;
     }
 
-    static {
-        System.err.println("children static block");
+    {
+        System.err.println("2nd children block");
+    }
+
+    public Children() {
+        System.err.println("children constructor");
     }
 }
