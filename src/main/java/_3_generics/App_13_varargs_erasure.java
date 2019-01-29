@@ -1,9 +1,6 @@
 package _3_generics;
 
-/**
- * http://www.angelikalanger.com/GenericsFAQ/FAQSections/ParameterizedTypes.html
- */
-public class App_12_varargs_erasure {
+public class App_13_varargs_erasure {
     static <T> T[] method_1(T t1, T t2) {
         return method_2(t1, t2);                       // unchecked warning
     }
