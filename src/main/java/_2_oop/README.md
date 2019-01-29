@@ -10,4 +10,4 @@
 
 [Java. Эффективное программирование - Блох Дж.](http://gen.lib.rus.ec/book/index.php?md5=25908E8431AD9C9DF84639BE2EB1C687): 6 - 153
 
-[Изучаем Java - Сьерра К., Бейтс Б.](http://gen.lib.rus.ec/book/index.php?md5=CA7B4123E75E174AB2A0B2CB7F9A766E): 38 - 124
+[Изучаем Java - Сьерра К., Бейтс Б.](http://gen.lib.rus.ec/book/index.php?md5=CA7B4123E75E174AB2A0B2CB7F9A766E): 57 - 124
