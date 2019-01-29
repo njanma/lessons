@@ -13,6 +13,13 @@ public class App_12_varargs {
      */
     @SafeVarargs
     private static <T> T[] varargsMethod(T... args) {
+        T arg = args[0];//java.lang.ArrayIndexOutOfBoundsException: 0
+        return args;
+    }
+
+    @SafeVarargs
+    private static <T> T[] varargsWithFirst(T fst, T... args) {
+        T arg = fst;
         return args;
     }
 
@@ -24,5 +31,7 @@ public class App_12_varargs {
 
     public static void main(String... args) {
         String[] strings = varargsMethod("bad", "karma");
+        String[] strings2 = varargsMethod();
+        String[] strings3 = varargsWithFirst("");
     }
 }
