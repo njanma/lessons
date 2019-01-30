@@ -4,30 +4,46 @@ public class App_2_12 {
 }
 
 interface I {
-    default int getI(){
+    public default int getI() {
         return 15;
     }
 }
 
 interface J {
-    int getJ();
+    public final static String J_CONSTANT = "";
+
+    public abstract int take(int i);
+
+    public default int getI() {
+        return 15;
+    }
+
+    public static int ddd() {
+        return 0;
+    }
 }
 
 interface J2 extends J {
-    default int multiplyJ(int multiplier) {
-        return getJ() * multiplier;
+    public default int multiplyJ(int multiplier) {
+        return take(19) * multiplier;
     }
 }
 
 //Предком может быть только класс, но не интерфейс
 //class XXX extends I {}
 
-class X implements I {}
+class X implements I {
+}
 
-class Y implements I, J {
+class Y implements J {
 
-    public int getJ() {
+    @Override
+    public int take(int i) {
         return getI();
     }
 
+    @Override
+    public int getI() {
+        return J.super.getI();
+    }
 }
