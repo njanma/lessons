@@ -1,5 +1,10 @@
 package _2_oop._6_polymorphism;
 
+/**
+ * Overloading.
+ * Ad hoc полиморфизм с интерфейсом
+ * https://en.wikipedia.org/wiki/Function_overloading
+ */
 public class App_2_17 {
     public static void main(String[] args) {
 

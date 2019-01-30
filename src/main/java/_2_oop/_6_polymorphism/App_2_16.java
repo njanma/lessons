@@ -49,10 +49,16 @@ class Rectangle {
 
 class FigureUtils1 {
 
+    /**
+     * Overloading.
+     */
     public static double perimeter(Rectangle rect) {
         return 2 * (rect.getHeight() + rect.getWidth());
     }
 
+    /**
+     * Overloading.
+     */
     public static double perimeter(Circle circle) {
         return 2 * Math.PI * circle.getRadius();
     }
