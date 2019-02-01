@@ -20,8 +20,16 @@ enum Modifier {
 enum Modifier2 {
     PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, ABSTRACT;
     private int mask;
+    {
+        System.err.println("instance init!");
+    }
+
+    Modifier2() {
+        System.err.println("constructor!");
+    }
 
     static {
+        System.err.println("static init!!!!!!!!!!!!!!!!!");
         int maskBit = 1;
         for (Modifier2 m : Modifier2.values()) {
             m.mask = maskBit;
