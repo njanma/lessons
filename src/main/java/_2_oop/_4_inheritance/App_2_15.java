@@ -16,13 +16,17 @@ public class App_2_15 {
 }
 
 class A2 {
+    int a;
+
     void f() {
         System.out.println("A.f()");
     }
 }
 
 class B2 extends A2 {
+    @Override
     void f() {
+        int a = this.a;
         System.out.println("B.f()");
     }
 
@@ -33,7 +37,9 @@ class B2 extends A2 {
 
 class C2 extends B2 {
 
+    @Override
     void f() {
+        super.f();
         System.out.println("C.f()");
     }
 

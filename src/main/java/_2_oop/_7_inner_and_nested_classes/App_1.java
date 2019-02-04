@@ -11,6 +11,24 @@ public class App_1 {
         //не скомпилируется
 //        Invoice.Item newItem = new Invoice.Item("новый счет", 1, 15);
 //        invoice.add(newItem);
+        Response.Ok ok = new Response.Ok();
+        Response.Fail fail = new Response.Fail();
+    }
+}
+interface Response{
+    class Ok{}
+    class Fail{}
+}
+class Response2{
+    static class Ok{}
+    static class Fail{}
+}
+
+
+interface A{
+    static class I{
+        interface A2{
+        }
     }
 }
 

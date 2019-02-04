@@ -11,7 +11,10 @@ public class App_2_17 {
     }
 
     static void numberFunc(Object arg) {
-        Number number = (Number) arg;
+        Number number = null;
+        if(arg instanceof Number){
+            number = (Number) arg;
+        }
         System.out.println("number is: " + number.intValue());
     }
 }
