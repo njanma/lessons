@@ -1,6 +1,6 @@
 package _3_generics;
 
-public class App_1 {
+public class App_1_generic_class {
     public static void main(String[] args) {
         new Entry<>("age", 2);
     }

@@ -2,7 +2,7 @@ package _3_generics;
 
 import java.util.Arrays;
 
-public class App_2 {
+public class App_2_generic_method {
     public static void main(String[] args) {
         String[] names = {"Peter", "Alex", "Emma", "Olivia"};
 

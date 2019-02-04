@@ -2,7 +2,7 @@ package _3_generics;
 
 import java.util.ArrayList;
 
-public class App_3 {
+public class App_3_intersection_type {
 
     public static <T extends AutoCloseable> void closeAll(ArrayList<T> elems) throws Exception {
         for (T elem : elems) elem.close();
