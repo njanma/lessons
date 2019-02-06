@@ -1,5 +1,8 @@
 package _2_oop._3_encapsulation;
 
+/**
+ * Принцип единообразия доступа.
+ */
 public class App_21 {
     public static void main(String[] args) {
         SecuredFred securedFred = new SecuredFred(45);
