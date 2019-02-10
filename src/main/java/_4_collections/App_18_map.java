@@ -13,8 +13,10 @@ public class App_18_map {
         map.put("Vasia", 25);
         map.put("Vladimir", 37);
         map.put("Konstantin", 50);
+        map.put(null, 50);
 
-        System.out.println(map);
+
+        System.out.println(map.get(null));
 
         System.out.println(new TreeMap<>(map));
     }

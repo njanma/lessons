@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 import static _4_collections.Utils.fillList;
+import static _4_collections.Utils.timerOnAction;
 
 public class App_11_array_vs_linked_speed {
 
@@ -28,7 +29,7 @@ public class App_11_array_vs_linked_speed {
         //middle
 //        timerOnAction(array, s -> s.get(s.size() / 2));
 //        timerOnAction(linked, s -> s.get(s.size() / 2));
-        //prepend
+        //append
 //        timerOnAction(new ArrayList<String>(), s -> s.add(0, ""), 100_000);
 //        timerOnAction(new LinkedList<String>(), s -> s.add(0, ""), 100_000);
         //insert in the middle
