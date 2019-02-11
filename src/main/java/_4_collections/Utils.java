@@ -117,6 +117,7 @@ public class Utils {
         public String toString() {
             return "Node{" +
                     "name='" + name + '\'' +
+                    ", id=" + id +
                     '}';
         }
     }

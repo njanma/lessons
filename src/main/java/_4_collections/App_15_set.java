@@ -1,8 +1,9 @@
 package _4_collections;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+
+import static java.util.Arrays.asList;
 
 /**
  * устройство java.util.Set
@@ -20,7 +21,7 @@ public class App_15_set {
 //        names.get("Ivan");
 
 
-        HashSet<String> alphabet = new HashSet<>(Arrays.asList("AAA", "BBB", "CCC", "AAA"));
+        Set<String> alphabet = new HashSet<>(asList("AAA", "BBB", "CCC", "AAA"));
         System.out.println(alphabet);
     }
 }
