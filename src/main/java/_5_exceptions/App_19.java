@@ -29,7 +29,9 @@ public class App_19 {
 
     }
 
-    static void throwRuntimeException() throws RuntimeException { // «указать» на то, что ваш метод может выбросить unchecked исключение
+    static void throwRuntimeException() throws RuntimeException { // «указать» на то,
+                                                                  // что ваш метод может выбросить
+                                                                  // unchecked исключение
         //example: java.lang.Integer.parseInt(java.lang.String)
     }
 

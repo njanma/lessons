@@ -16,7 +16,7 @@ import java.util.function.Supplier;
  */
 public class App_3 {
     public static void main(String[] args) throws Exception {
-        printMessage(() -> "message", 1000);
+        printMessage(() -> "message", 10000);
         throw new Error();
     }
 

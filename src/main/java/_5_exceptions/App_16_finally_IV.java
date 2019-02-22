@@ -1,5 +1,7 @@
 package _5_exceptions;
 
+import java.util.Random;
+
 public class App_16_finally_IV {
 
     public static void main(String[] args) {
@@ -8,7 +10,7 @@ public class App_16_finally_IV {
 
     static int getI() {
         try {
-            return 0;
+            return new Random().nextInt();
         } finally {
             throw new RuntimeException();
         }

@@ -1,10 +1,12 @@
 package _5_exceptions;
 
+import _5_exceptions.exception.DataValidationException;
+
 public class App_11 {
     public static void main(String[] args) {
         try {
             System.err.println(" 0");
-            if (true) {throw new RuntimeException();}
+            if (true) {throw new DataValidationException();}
             System.err.println(" 1");
         } catch (RuntimeException e) {         // перехватили RuntimeException
             System.err.println(" 2.1");
