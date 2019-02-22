@@ -12,18 +12,20 @@ public class App_13_regexp {
         String regex = "[+-]?\\d+";
         String tel1 = "+375295555555";
         String tel2 = "+375(29)555-55-55";
+        String tel3 = "+375295555555     +375295555556";
 
-        match(regex, tel1);
+//        match(regex, tel1);
 
-        match(regex, tel2);
-        find(regex, tel2);
+//        match(regex, tel2);
+//        find(regex, tel2);
+        find(regex, tel3);
     }
 
     static void match(String regex, String input) {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(input);
         if (Pattern.matches(regex, input) || matcher.matches()) {
-            System.out.println("matches!");
+            System.out.println(input + " matches!");
         }
     }
 

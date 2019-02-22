@@ -14,8 +14,5 @@ public class App_9_paths {
         Path root = props.getRoot();  // Начальный отрезок пути /  (или пустое значение null для относительного пути)
         Path first = props.getName(0);  // Первый элемент заданного пути
         Path dir = props.subpath(1, props.getNameCount());// Весь путь,  кроме первого элемента cay/myарр.properties
-
-        for (Path component : absolute) {
-        }
     }
 }
