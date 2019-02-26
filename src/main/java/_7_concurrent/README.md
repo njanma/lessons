@@ -1,12 +1,14 @@
 ### Summary:
 
-![cache_hierarchy](img/cache_hierarchy.png)
+![cache_hierarchy](resources/cache_hierarchy.png)
 
-![numa](img/numa.png)
+![numa](resources/numa.png)
 
-![smp](img/smp.png)
+![smp](resources/smp.png)
 
-![false sharing](img/false_sharing.png)
+![false sharing](resources/false_sharing.png)
+
+[animated concurrency](resources/javaConcurrentAnimated.jar)
 
 ### Литература:
 [NUMA](https://en.wikipedia.org/wiki/Non-uniform_memory_access)
