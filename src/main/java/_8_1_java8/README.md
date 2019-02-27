@@ -1,5 +1,9 @@
 ### Summary:
 
+![external](resources/external_iter.png)
+
+![internal](resources/internal_iter.png)
+
 ![stream](resources/stream.jpg)
 
 ### Литература:
