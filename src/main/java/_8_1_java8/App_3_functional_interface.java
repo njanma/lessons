@@ -9,13 +9,18 @@ import java.util.List;
 public class App_3_functional_interface {
     public static void main(String[] args) {
         MyPredicate<List<String>> isListEmpty = list -> list.size() < 1;
-        if(isListEmpty.test(Arrays.asList("1","2"))){
-            System.out.println("No way!");
+        if (isListEmpty.negate().test(Arrays.asList("1", "2"))) {
+            System.out.println("list not empty!");
         }
     }
 
     @FunctionalInterface
     interface MyPredicate<T> {
+
         boolean test(T arg);
+
+        default MyPredicate<T> negate() {
+            return (t) -> !test(t);
+        }
     }
 }
