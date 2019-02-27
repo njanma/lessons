@@ -4,6 +4,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * java.util.concurrent.atomic
+ * lock-free
  */
 public class App_15_atomics {
     private static AtomicInteger counter = new AtomicInteger(0);

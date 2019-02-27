@@ -19,6 +19,8 @@
 
 [false-sharing](https://mechanical-sympathy.blogspot.com/2011/07/false-sharing.html)
 
+[non-blocking](https://en.wikipedia.org/wiki/Non-blocking_algorithm)
+
 [JMM](https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html)
 
 [juc](https://habr.com/company/luxoft/blog/157273/)

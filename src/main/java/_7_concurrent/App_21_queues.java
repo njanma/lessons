@@ -22,7 +22,7 @@ import java.util.concurrent.TransferQueue;
  */
 public class App_21_queues {
     public static void main(String[] args) {
-        //non-blocking queues
+        //non-blocking queues, wait-free
         Queue<Object> linkedQueue = new ConcurrentLinkedQueue<>();
         Deque<Object> concurrentLinkedDeque = new ConcurrentLinkedDeque<>();
 
