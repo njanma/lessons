@@ -17,9 +17,6 @@ import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TransferQueue;
 
-/**
- * https://en.wikipedia.org/wiki/Skip_list
- */
 public class App_21_queues {
     public static void main(String[] args) {
         //non-blocking queues, wait-free
@@ -29,8 +26,10 @@ public class App_21_queues {
         //blocking queues
         BlockingQueue<String> arrayBlockingQueue = new ArrayBlockingQueue<>(100);
         BlockingQueue<Integer> linkedBlockingQueue = new LinkedBlockingQueue<>(); //default size Integer.MAX_VALUE
-        BlockingQueue<MyDelayed> delayQueue = new DelayQueue<>();
+
+        //sorted blocking queues
         BlockingQueue<Integer> priorityBlockingQueue = new PriorityBlockingQueue<>();
+        BlockingQueue<MyDelayed> delayQueue = new DelayQueue<>();
 
         //blocking deques
         BlockingDeque<Object> linkedBlockingDeque = new LinkedBlockingDeque<>(); //default size Integer.MAX_VALUE
