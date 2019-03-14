@@ -9,12 +9,12 @@ public class User{
 ```
 ```
 public class Animal{
-        private String name;
+        private String nickname;
         private Type type;
     }
 ```
 ```
-enum Type{
+public enum Type{
     DOG, CAT, FISH, BIRD
 }
 ```
@@ -22,15 +22,20 @@ enum Type{
 в том числе из `animal` из `relatives`.
 3. Напишите `bridge` для отдачи комманд как `user` так и `animal`.
 ```
-interface Trainer is
-    method lie()
-    method voice()
+interface Trainer {
+    void lie();
+    void voice();
     ...
+}
 ```
 ```
 // Но каждый тренер имеет особую реализацию
-class UserTrainer implements Trainer is
+class UserTrainer implements Trainer{
+    ...
+}
 ```
 ```
-class AnimalTrainer implements Trainer is
+class AnimalTrainer implements Trainer{
+    ...
+}
 ```

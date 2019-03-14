@@ -22,3 +22,32 @@ public class App_1_adapter {
         Writer outputStreamWriter = new OutputStreamWriter(new ByteArrayOutputStream());
     }
 }
+
+interface JsonService {
+    Json prepareJson(Json json);
+}
+
+interface XmlService {
+    Xml getFromDb();
+}
+
+interface XmlToJsonAdapter {
+    Json mapping(Xml xml);
+}
+
+class DataFlowService {
+    private XmlService xmlService;
+    private JsonService jsonService;
+    private XmlToJsonAdapter adapter;
+
+    void flowDataFromDb() {
+        Xml fromDb = xmlService.getFromDb();
+        Json json = jsonService.prepareJson(adapter.mapping(fromDb));
+    }
+}
+
+class Xml {
+}
+
+class Json {
+}
