@@ -1,6 +1,13 @@
 1. Напишите `factory` для классов `User` и `Animal`.
 ```
-public class User{
+public interface BaseEntity{
+    void lie();
+    void voice();
+    ...
+}
+```
+```
+public class User implements BaseEntity{
     private String name;
     private Integer age;
     private Animal pet;
@@ -8,7 +15,7 @@ public class User{
 }
 ```
 ```
-public class Animal{
+public class Animal implements BaseEntity{
         private String nickname;
         private Type type;
     }
