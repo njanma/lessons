@@ -1,2 +1,3 @@
 rootProject.name = 'lessons'
+include 'servlet'
 
