@@ -1,5 +1,7 @@
 package _8_1_java8;
 
+import lombok.Value;
+
 import java.util.List;
 
 import static java.util.Arrays.asList;
@@ -9,17 +11,24 @@ import static java.util.Arrays.asList;
  */
 public class App_5_internal_iteration {
     public static void main(String[] args) {
-        List<Artist> allArtists = asList();
-        countArtistsFromByStream("London", allArtists);
+        List<Artist> allArtists = asList(new Artist("London"), new Artist("Manchester"));
+        long fromLondon = countArtistsFromByStream("London", allArtists);
+        System.out.println(fromLondon);
     }
 
     private static long countArtistsFromByStream(String town, List<Artist> allArtists) {
         return allArtists.stream()
                 .filter(artist -> artist.isFrom(town))
+                .peek(art -> System.out.println(town))
                 .count();
     }
 
-    interface Artist {
-        boolean isFrom(String town);
+    @Value
+    static class Artist {
+        private final String town;
+
+        boolean isFrom(String that) {
+            return town.equals(that);
+        }
     }
 }
