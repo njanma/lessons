@@ -1,3 +1,4 @@
 rootProject.name = 'lessons'
 include 'servlet'
+include 'jsp'
 
