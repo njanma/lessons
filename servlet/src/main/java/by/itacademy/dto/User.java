@@ -13,8 +13,13 @@ public class User {
 
     private String firstName;
     private String lastName;
+    private Role role;
 
     public String fullName() {
         return firstName + " " + lastName;
+    }
+
+    public enum Role{
+        ADMIN, USER
     }
 }
