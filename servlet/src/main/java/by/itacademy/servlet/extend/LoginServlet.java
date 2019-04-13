@@ -23,7 +23,7 @@ public class LoginServlet extends HttpServlet {
             String firstName = req.getParameter("firstName");
             String lastName = req.getParameter("lastName");
             if (firstName != null && lastName != null) {
-                req.getSession().setAttribute(USER, new User(firstName, lastName));
+                req.getSession().setAttribute(USER, new User(firstName, lastName, User.Role.ADMIN));
             } else {
                 resp.setContentType("text/html");
                 resp.setCharacterEncoding(StandardCharsets.UTF_8.name());

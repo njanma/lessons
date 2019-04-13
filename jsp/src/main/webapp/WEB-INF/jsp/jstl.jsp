@@ -8,7 +8,7 @@
 <body>
 
     <c:forEach var="request" items="${requestScope.requests}">
-        <a href="${pageContext.request.contextPath}/request-save?id=${request.id}&lang=ru"></a>
+        <a href="${pageContext.request.contextPath}/request-save?id=${request.id}&lang=ru">request_${request.id}</a>
         <c:if test="${fn:length(request.description) > 8}">
             <p>${request.date}. ${request.description}</p>
         </c:if>

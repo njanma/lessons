@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class RequestDto {
 
+    private Integer id;
     private String description;
     private String date;
 }

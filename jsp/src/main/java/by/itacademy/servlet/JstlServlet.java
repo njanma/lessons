@@ -24,10 +24,12 @@ public class JstlServlet extends HttpServlet {
 //                .build());
         req.setAttribute("requests", Arrays.asList(
                 RequestDto.builder()
+                        .id(1)
                         .date("2018-02-03")
                         .description("test 2222222")
                         .build(),
                 RequestDto.builder()
+                        .id(2)
                         .date("2018-03-09")
                         .description("test 3")
                         .build()

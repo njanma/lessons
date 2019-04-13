@@ -16,7 +16,8 @@ public class ForwardServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("test!!!");
         ServletContext context = getServletContext();
-        RequestDispatcher requestDispatcher = context.getRequestDispatcher("/fullName");
+        RequestDispatcher requestDispatcher = context
+                .getRequestDispatcher("/counter");
         requestDispatcher.forward(req, resp);
         System.out.println();
     }

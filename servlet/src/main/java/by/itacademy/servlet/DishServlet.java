@@ -1,24 +1,19 @@
 package by.itacademy.servlet;
 
-
-import by.itacademy.util.Types;
+import by.itacademy.service.DishService;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.concurrent.atomic.AtomicInteger;
 
-@WebServlet("/counter2")
-public class SecondServlet extends HttpServlet {
+public class DishServlet extends HttpServlet {
 
-    private AtomicInteger counter = new AtomicInteger(0);
+    private DishService dishService = DishService.getInstance();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType(Types.TEXT_PLAIN);
-        resp.getWriter().print(counter.incrementAndGet());
+        resp.getWriter().println(dishService.getAll());
     }
 }

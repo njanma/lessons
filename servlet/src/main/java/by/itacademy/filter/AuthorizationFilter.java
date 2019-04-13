@@ -16,7 +16,7 @@ import java.util.Objects;
 
 import static by.itacademy.dto.User.Role.ADMIN;
 
-@WebFilter(servletNames = {"HeroList"})
+@WebFilter(servletNames = {"AdminPanel"})
 public class AuthorizationFilter implements Filter {
 
     @Override
@@ -26,7 +26,10 @@ public class AuthorizationFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+
         if (isUserAdmin(servletRequest)) {
+            ((HttpServletRequest) servletRequest).getSession()
+                    .setAttribute("session_id", "dhas12i12312h3i123u");
             filterChain.doFilter(servletRequest, servletResponse);
         } else {
             ((HttpServletResponse) servletResponse).sendRedirect("/login");
@@ -39,7 +42,9 @@ public class AuthorizationFilter implements Filter {
     }
 
     public boolean isUserAdmin(ServletRequest servletRequest) {
-        User user = (User) ((HttpServletRequest) servletRequest).getSession().getAttribute("user");
+        User user = (User) ((HttpServletRequest) servletRequest)
+                .getSession()
+                .getAttribute("user");
         return Objects.nonNull(user) && user.getRole() == ADMIN;
     }
 }
