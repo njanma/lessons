@@ -9,7 +9,7 @@
 ![Map](image/java-map-hierarchy.png)
 
 
-### Литература:
+### Literature:
 
 [Big-O complexities](https://habr.com/post/188010)
 

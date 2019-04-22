@@ -10,7 +10,7 @@
 
 [animated concurrency](resources/javaConcurrentAnimated.jar)
 
-### Литература:
+### Literature:
 [NUMA](https://en.wikipedia.org/wiki/Non-uniform_memory_access)
 
 [SMP](https://en.wikipedia.org/wiki/Symmetric_multiprocessing)

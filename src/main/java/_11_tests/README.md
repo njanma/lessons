@@ -1,0 +1,5 @@
+### Summary:
+
+### Literature:
+
+[Junit documentation](https://github.com/junit-team/junit4/wiki/Getting-started)

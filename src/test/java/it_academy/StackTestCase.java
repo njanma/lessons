@@ -1,6 +1,6 @@
 package it_academy;
 
-import _5_annotation_test.MyTest;
+import _11_tests.MyTest;
 import org.junit.Assert;
 import org.junit.Test;
 
