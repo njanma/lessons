@@ -2,7 +2,7 @@
 из `Pair` из предыдущего задания (т.е. `Iterator<Integer>`) от этих `Pair<Integer>`.
 Наподобие [такого](https://github.com/njanma/lessons/tree/master/src/main/java/_4_collections/iterator/squares). 
 ```
-for(Integer max : new PairMaxIterable(asList(Pair(1,2), Pair(3,2), Pair(1,5)))){
+for(Integer max : new PairMaxIterable<>(asList(Pair(1,2), Pair(3,2), Pair(1,5)))){
             System.out.print(max + " ");
 }
 ```
