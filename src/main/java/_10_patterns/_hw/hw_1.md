@@ -1,48 +1,62 @@
-1. Напишите `factory` для классов `User` и `Animal`.
-```
-public interface BaseEntity{
-    void lie();
-    void voice();
-    ...
-}
-```
-```
-public class User implements BaseEntity{
+1. У Вас есть коллекция каких-то продуктов. Вы хотите дать пользователям фильтровать продукты по определенным критериям.
+При реализации используйте паттерн `Strategy`. Создайте отдельный класс с демонстрацией работы.
+``` 
+class Product {
     private String name;
-    private Integer age;
-    private Animal pet;
-    private List<User> relatives;
+    private Integer listPrice;
+    private Integer sellingPrice;
 }
 ```
 ```
-public class Animal implements BaseEntity{
-        private String nickname;
-        private Type type;
+class ProductService{
+    private List<Product> products;
+    
+    public List<Product> filter(ProductFilteringStrategy filterStrategy) {
+        //TODO
     }
-```
-```
-public enum Type{
-    DOG, CAT, FISH, BIRD
-}
-```
-2. Напишите `adapter` для преобразования из `user` всех `animal`, 
-в том числе из `animal` из `relatives`.
-3. Напишите `bridge` для отдачи комманд как `user` так и `animal`.
-```
-interface Trainer {
-    void lie();
-    void voice();
-    ...
 }
 ```
 ```
-// Но каждый тренер имеет особую реализацию
-class UserTrainer implements Trainer{
-    ...
+interface ProductFilteringStrategy {
+    boolean filter(Product product);
+}
+```
+2. Вы хотите получать оплату через два сервиса `paypal` и `кредитные карты`, но `API` для этого разный.
+При реализации используйте паттерн `Adapter`. Создайте отдельный класс с демонстрацией работы.
+```
+class PayPal{
+    private String email;
+    private String password;
+    
+    public String transfer(String email, Integer amount){
+        return "Paypal Success!";
+    }
 }
 ```
 ```
-class AnimalTrainer implements Trainer{
-    ...
+class CreditCard{
+    private String number;
+    private LocalDate expiration;
+    
+    public String authorizeTransaction(Integer amount){
+        return "Authorization code: as2321";
+    }
+}
+```
+```
+interface PaymentAdapter{
+    public boolean collectMoney(Integer amount);
+}
+```
+
+```
+class CreditCardAdapter implements PaymentAdapter{
+    //TODO
+}
+```
+
+```    
+class PayPalAdapter implements PaymentAdapter{
+    //TODO
 }
 ```
