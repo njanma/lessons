@@ -62,3 +62,20 @@ class PayPalAdapter implements PaymentAdapter{
     //TODO
 }
 ```
+
+```
+class Market{
+    
+    public boolean pay(PayPalAccount payPalAccount, Integer amount){
+        return pay(new PayPalAdapter(payPalAccount));   
+    }
+    
+    public boolean pay(CreditCard creditCard, Integer amount){
+        //TODO
+    }
+    
+    private boolean pay(PaymentAdapter paymentAdapter){
+        return payPalAdapter.collectMoney(amount);
+    }
+}
+```
