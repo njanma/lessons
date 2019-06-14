@@ -24,7 +24,7 @@ interface ProductFilteringStrategy {
 2. Вы хотите получать оплату через два сервиса `paypal` и `кредитные карты`, но `API` для этого разный.
 При реализации используйте паттерн `Adapter`. Создайте отдельный класс с демонстрацией работы.
 ```
-class PayPal{
+class PayPalAccount{
     private String email;
     private String password;
     
@@ -51,12 +51,14 @@ interface PaymentAdapter{
 
 ```
 class CreditCardAdapter implements PaymentAdapter{
+    private final CreditCard creditCard;
     //TODO
 }
 ```
 
 ```    
 class PayPalAdapter implements PaymentAdapter{
+    private final PayPalAccount payPalAccount;
     //TODO
 }
 ```
