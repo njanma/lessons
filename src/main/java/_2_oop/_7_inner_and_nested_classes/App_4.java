@@ -8,9 +8,10 @@ public class App_4 {
     }
 
     class A {
-        public final static int i = 2;
+        public static final int i = 2;
 
         //inner classes cannot have static declarations.
 //        public static int getI(){return 1;}
     }
+
 }
